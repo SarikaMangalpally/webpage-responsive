@@ -79,7 +79,10 @@
     border-style: solid hidden;
     text-transform: uppercase;
     border-color: #454545;
+  }
+  .header-logo a {
     color: #454545;
+    text-decoration: none;
   }
   nav {
     visibility: hidden;
@@ -162,5 +165,53 @@
     color: #454545;
     margin: 0;
     padding: 15px 0px;
+  }
+  .main-div {
+    margin: 12px;
+  }
+  .financer-template-div {
+    background-color: #363635;
+    padding: 5em 2em;
+    margin: auto;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  .financer-heading {
+    line-height: 1.1em;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .new-text {
+    color: #f49f00;
+  }
+  .financer-description {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 35px 2px;
+    font-weight: 200;
+  }
+  .financer-template-contact {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  .financer-template-contact span {
+    float: left;
+    padding: 19px 13px;
+    width: 100%;
+    color: #fff;
+  }
+  .financer-template-contact a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .about-us {
+    background-color: #cf0303;
+    margin: 15px 0px;
+  }
+  .contact-us {
+    margin: 15px 2px;
+    background-color: #f49f00;
   }
 }
