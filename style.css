@@ -129,12 +129,12 @@
     transform-origin: left;
     transition: transform 0.5s ease;
   }
-  .list-item a:hovezzzzr::after {
+  .list-item a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
     margin: 20px auto;
   }
-  /* .arrow {
+  .arrow {
     position: absolute;
     width: 8px;
     height: 8px;
@@ -165,7 +165,7 @@
     color: #454545;
     margin: 0;
     padding: 15px 0px;
-  } */
+  }
   .main-div {
     margin: 12px;
   }
