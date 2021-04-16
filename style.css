@@ -134,7 +134,7 @@
     transform-origin: left;
     margin: 20px auto;
   }
-  .arrow {
+  /* .arrow {
     position: absolute;
     width: 8px;
     height: 8px;
@@ -165,7 +165,7 @@
     color: #454545;
     margin: 0;
     padding: 15px 0px;
-  }
+  } */
   .main-div {
     margin: 12px;
   }
@@ -175,7 +175,35 @@
     margin: auto;
     color: #fff;
     font-family: sans-serif;
+    background-image: url("assets/carousel.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+  /* .background-image-zoom-out {
+    animation: zoom-out 10s infinite ease;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+    position: relative;
+    object-fit: contain; 
+  }
+  @keyframes zoom-out {
+    0% {
+      transform: scale(1);
+
+    }
+    50% {
+      transform: scale(0.5);
+
+    }
+    100% {
+      transform: scale(1);
+    }
+  }*/
   .financer-heading {
     line-height: 1.1em;
     font-size: 28px;
@@ -187,7 +215,7 @@
   .financer-description {
     font-size: 18px;
     line-height: 1.5em;
-    margin: 35px 2px;
+    margin: 35px 0px;
     font-weight: 200;
   }
   .financer-template-contact {
@@ -214,4 +242,29 @@
     margin: 15px 2px;
     background-color: #f49f00;
   }
+  .slide-span {
+    text-align: center;
+    /* margin-top: 45%; */
+    display: flex;
+    width: 75%;
+    margin: 75% auto -20% auto;
+    position: relative;
+  }
+  .slide-span span {
+    margin: auto;
+  }
+  .slide-span span a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #686868;
+    width: 45px;
+    margin: auto;
+    height: 1px;
+    /* bottom: 10px; */
+  }
+  .slide-span a:hover {
+    background-color: #fff;
+  }
+}
+@media (max-width: 780px) {
 }
