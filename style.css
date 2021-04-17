@@ -1,292 +1,58 @@
 header {
   display: block;
 }
-@media (max-width: 350px) {
-  .financer-description {
-    font-size: 20px;
-    line-height: 1.5em;
-    margin: 15px 0px;
-    font-weight: 250;
-  }
-  .slide-span {
-    display: flex;
-    width: 75%;
-    margin: 35% auto -20% auto !important;
-    padding-top: 70% !important;
-  }
-  .slide-span span a {
-    width: 40px !important;
-  }
-  .financer-template-div {
-    padding: 5.5em 1.8em;
-  }
+.financer-template-div {
+  background-color: #363635;
+  padding: 5em 2em 0em;
+  margin: auto;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("assets/carousel.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.new-text {
+  color: #f49f00;
+}
+.slide-span a {
+  display: block;
+  text-decoration: none;
+  height: 1px;
+}
+.slide-span a:hover {
+  background-color: #fff;
+}
+.financer-description {
+  font-size: 19px;
+  line-height: 1.5em;
+  margin: 25px 0px;
+  font-weight: normal;
+}
+.main-div {
+  margin: 15px;
+}
+.slide-span span {
+  margin: 2px;
+  width: 40px;
+}
+.financer-template-contact {
+  margin: 50px auto;
+  font-size: 14px;
+  color: #fff;
 }
 
-@media (max-width: 480px) {
-  /* .hamburger-menu-div {
-    width: 60px;
-    height: 60px;
-    background-color: #454545;
-    left: 0;
-    top: 0;
-    position: fixed;
-    z-index: 1;
-  }
-  .menu-bars {
-    visibility: visible;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    margin: 20px 14px;
-  }
-  .menu-bars:before {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    content: "";
-    margin: 10px auto;
-  }
-  .menu-bars:after {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    content: "";
-    margin: 20px auto;
-  }
-  .close-icon {
-    position: absolute;
-    margin: 10px 25px;
-    width: 3px;
-    height: 30px;
-    visibility: hidden;
-  }
-  .close-icon:before {
-    left: 4px;
-    top: 6px;
-    background-color: #fff;
-    content: "";
-    position: absolute;
-    transform: rotate(45deg);
-    width: 2px;
-    height: 30px;
-  }
-  .close-icon:after {
-    left: 4px;
-    top: 6px;
-    background-color: #ffffff;
-    width: 2px;
-    position: absolute;
-    height: 30px;
-    content: "";
-    transform: rotate(-45deg);
-  }
-  */
-  .header-logo {
-    text-align: center;
-    margin: auto;
-    width: 50%;
-  }
-  .header-logo h1 {
-    margin: 20px auto;
-    font-size: 26px;
-    letter-spacing: 2px;
-    line-height: 1.2em;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    width: auto;
-  }
-  .header-logo a {
-    border-color: #575757;
-    border-style: solid hidden;
-    color: #575757;
-    text-decoration: none;
-  }
-  /* nav {
-    visibility: hidden;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #454545;
-    overflow: scroll;
-  }
-  nav ul {
-    position: relative;
-    top: 86px;
-    text-align: center;
-    margin: auto;
-    padding: 0;
-  }
-  .list-item {
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-type: none;
-    text-transform: uppercase;
-    margin: auto;
-  }
-  .list-item a {
-    font-size: 0.82em;
-    display: inline-block;
-    margin: auto;
-    text-decoration: none;
-    color: #fff;
-    transform: scale(1, 1.1);
-    letter-spacing: 2px;
-    font-weight: 400;
-    width: 85%;
-    padding: 8px;
-  }
-  .list-item a:after {
-    display: block;
-    content: "";
-    margin: 20px auto;
-    border-bottom: solid 2px #fff;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease;
-  }
-  .list-item a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-    margin: 20px auto;
-  } */
-  /* .arrow {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-width: 2px;
-    border-style: solid solid hidden hidden;
-    border-color: #ffffff;
-  }
-  .up-arrow {
-    transform: rotate(-45deg);
-  }
-  .down-arrow {
-    transform: rotate(135deg);
-  }
-  .sublist {
-    position: relative;
-    top: -20px;
-    text-align: center;
-    margin: 0;
-    background-color: #fff;
-  }
-  .sublist li {
-    margin: auto;
-    text-align: center;
-    color: #454545;
-    display: inline;
-  }
-  .sublist a {
-    color: #454545;
-    margin: 0;
-    padding: 15px 0px;
-  } */
-  .main-div {
-    margin: 12px;
-  }
-  /* .financer-template-div {
-    background-color: #363635;
-    padding: 5em 2em;
-    margin: auto;
-    color: #fff;
-    font-family: sans-serif;
-    background-image: url("assets/carousel.jpg");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  } */
-  /* .background-image-zoom-out {
-    animation: zoom-out 10s infinite ease;
-    animation-fill-mode: forwards;
-    z-index: -1;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-attachment: fixed;
-    position: relative;
-    object-fit: contain; 
-  }
-  @keyframes zoom-out {
-    0% {
-      transform: scale(1);
-
-    }
-    50% {
-      transform: scale(0.5);
-
-    }
-    100% {
-      transform: scale(1);
-    }
-  }*/
-  .financer-heading {
-    line-height: 1.1em;
-    font-size: 28px !important;
-    font-weight: 400;
-    font-size: 28px;
-    margin-bottom: 35px;
-  }
-  .new-text {
-    color: #f49f00;
-  }
-  .financer-description {
-    font-size: 19px;
-    line-height: 1.5em;
-    margin: 23px 0px;
-    font-weight: 400;
-  }
-  .financer-template-contact {
-    width: 100%;
-    margin: 0;
-    font-size: 15px;
-  }
-  .financer-template-contact span {
-    padding: 18px;
-    /* width: 100%; */
-    color: #fff;
-    margin: 1px;
-    float: left;
-  }
-  .financer-template-contact a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .about-us {
-    background-color: #cf0303;
-    /* margin: 15px 0px; */
-  }
-  .contact-us {
-    /* float: left; */
-    /* margin: 15px 2px; */
-    background-color: #f49f00;
-  }
-  .slide-span {
-    display: flex;
-    width: 58%;
-    margin: 35% auto -20% auto;
-    padding-top: 45%;
-  }
-  .slide-span span {
-    margin: auto;
-  }
-  .slide-span span a {
-    display: block;
-    background-color: #686868;
-    width: 45px;
-    /* margin: auto; */
-    height: 1px;
-  }
-  .slide-span a:hover {
-    background-color: #fff;
-  }
+.financer-template-contact a {
+  text-decoration: none;
+  color: #fff;
 }
-@media screen and (max-width: 768px) {
+.about-us {
+  background-color: #df0505;
+}
+.contact-us {
+  background-color: #f1a00a;
+}
+@media (max-width: 768px) {
   .hamburger-menu-div {
     width: 60px;
     height: 60px;
@@ -353,8 +119,25 @@ header {
   .header-logo {
     text-align: center;
     margin: auto;
-    padding: 0;
-    width: 100%;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header-logo h1 {
+    margin: 20px auto;
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    font-weight: 500;
+    padding: 5px 0;
+    text-transform: uppercase;
+    width: auto;
+  }
+  .header-logo a {
+    margin: auto;
+    border-color: #575757;
+    border-style: solid hidden;
+    color: #575757;
+    text-decoration: none;
   }
   nav {
     visibility: hidden;
@@ -372,10 +155,10 @@ header {
     text-align: center;
     margin: auto;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .list-item {
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     text-transform: uppercase;
     margin: auto;
@@ -406,33 +189,114 @@ header {
     transform-origin: left;
     margin: 20px auto;
   }
-  .header-logo h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    padding: 5px;
-    letter-spacing: 2px;
+
+  .slide-span {
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    margin: 65% 35% 0% 35%;
   }
-  .header-logo a {
-    color: #575757;
-    text-decoration: none;
-    border-style: solid hidden;
-    border-color: #575757;
-    text-transform: uppercase;
-    font-weight: 500;
+  .slide-span span {
+    text-align: center;
+    /* margin: 1px; */
+    height: 1px;
+    background-color: #575757;
   }
-  .financer-template-div {
-    background-color: #363636;
-    padding: 5em 2em;
-    margin: auto;
-    color: #fff;
-    font-family: sans-serif;
-    background-image: url("assets/carousel.jpg");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .financer-template-contact span {
+    padding: 18px 22px;
+    width: 50%;
   }
   .financer-heading {
-    font-size: 30px;
-    /* width: 75%; */
+    font-size: 38px;
+    line-height: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .slide-span {
+    margin: 65% 30% 0% 30%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .slide-span {
+    margin: 75% 25% 0% 25%;
+  }
+
+  .financer-heading {
+    font-size: 26px;
+    line-height: 1em;
+  }
+}
+
+@media screen and (min-width: 351px) and (max-width: 480px) {
+  /* .arrow {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-width: 2px;
+    border-style: solid solid hidden hidden;
+    border-color: #ffffff;
+  }
+  .up-arrow {
+    transform: rotate(-45deg);
+  }
+  .down-arrow {
+    transform: rotate(135deg);
+  }
+  .sublist {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    margin: 0;
+    background-color: #fff;
+  }
+  .sublist li {
+    margin: auto;
+    text-align: center;
+    color: #454545;
+    display: inline;
+  }
+  .sublist a {
+    color: #454545;
+    margin: 0;
+    padding: 15px 0px;
+  }
+   .background-image-zoom-out {
+    animation: zoom-out 10s infinite ease;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+    position: relative;
+    object-fit: contain; 
+  }
+  @keyframes zoom-out {
+    0% {
+      transform: scale(1);
+
+    }
+    50% {
+      transform: scale(0.5);
+
+    }
+    100% {
+      transform: scale(1);
+    }
+  }*/
+  .financer-heading {
+    line-height: 1.1em;
+    font-size: 28px !important;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .financer-heading {
+    font-size: 38px;
+    line-height: 1em;
   }
 }
