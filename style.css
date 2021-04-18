@@ -110,6 +110,51 @@ section {
 .what-we-do-description p {
   margin: 0;
 }
+.who-we-are-image-div img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+.who-we-are-grid h3 {
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+.who-we-are-grid p {
+  margin: -5px 0 0;
+  /* padding: 0 2px; */
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  color: #929292;
+}
+.who-we-are-flex-div {
+  margin: 5px 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+}
+.who-we-are-flex {
+  display: flex;
+  margin-bottom: 20px;
+  /* margin-top: -5px; */
+}
+.who-we-are-flex i {
+  width: 14%;
+  float: left;
+  font-size: 32px;
+  top: 22px;
+  position: relative;
+  color: #d10101;
+}
+.flex-description {
+  width: 80%;
+  float: right;
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
 @media (max-width: 768px) {
   .contact-mail {
     display: none;
@@ -277,9 +322,6 @@ section {
   }
   .who-we-are-flex-div {
     margin: 5px 0;
-    display: grid;
-    grid-template-columns: 100%;
-
   }
   .who-we-are-flex {
     display: flex;
@@ -298,12 +340,6 @@ section {
     width: 100%;
     float: right;
     margin-top: -5px;
-  }
- 
-  .who-we-are-image-div img {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -529,5 +565,20 @@ section {
     grid-template-columns: repeat(4, 24.5%);
     grid-auto-rows: auto;
     grid-gap: 10px;
+  }
+  .who-we-are-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+    padding:0 8px;
+    margin-top: -20px;
+  }
+  .who-we-are-grid-item {
+    padding: 0 15px 0 5px;
+  }
+  .who-we-are-image-div {
+    position: relative;
+    top: 20px;
   }
 }
