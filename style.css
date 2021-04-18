@@ -122,6 +122,7 @@ section {
     top: 0;
     position: fixed;
     z-index: 1;
+    cursor: pointer;
   }
   .menu-bars {
     visibility: visible;
@@ -252,6 +253,58 @@ section {
     margin: 0 0 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
+  .who-we-are-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+    padding:0 8px;
+    margin-top: -20px;
+  }
+  .who-we-are-grid h3 {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+  .who-we-are-grid p {
+    margin: -5px 0 0;
+    padding: 0 2px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    color: #929292;
+  }
+  .who-we-are-flex-div {
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
+  .who-we-are-flex {
+    display: flex;
+    margin-bottom: 20px;
+    /* margin-top: -5px; */
+  }
+  .who-we-are-flex i {
+    width: 12%;
+    float: left;
+    font-size: 32px;
+    top: 30px;
+    position: relative;
+    color: #d10101;
+  }
+  .flex-description {
+    width: 100%;
+    float: right;
+    margin-top: -5px;
+  }
+ 
+  .who-we-are-image-div img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 @media (max-width: 480px) {
   .slide-span {
@@ -270,13 +323,19 @@ section {
   .slide-span {
     margin: 75% 25% 0% 25%;
   }
-
   .financer-heading {
     font-size: 26px;
     line-height: 1em;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .flex-description {
+    width: 100%;
+    float: right;
+    margin-left: 28px;
+    position: relative;
+  }
+}
 @media screen and (min-width: 351px) and (max-width: 480px) {
   /* .arrow {
     position: absolute;
@@ -461,9 +520,9 @@ section {
     margin: 0 0 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .what-we-do-section {
+  .what-we-do-section, .who-we-are {
     margin: auto;
-  max-width: 80rem;
+    max-width: 80rem;
   }
   .what-we-do {
     display: grid;
@@ -471,5 +530,4 @@ section {
     grid-auto-rows: auto;
     grid-gap: 10px;
   }
-
 }
