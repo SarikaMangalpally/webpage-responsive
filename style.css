@@ -334,22 +334,19 @@ header {
   }
   header {
     position: absolute;
-    display: block;
-    width: 100%;
+    margin-top: 35px;
+    width: 97.5%;
     border-top: dotted 1px #fff;
-    margin: 35px 15px;
-    padding-top: 5px;
   }
   .header-logo {
-    float: left;
-    width: 17%;
-    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    width: 16%;
   }
   .header-logo h1 {
+    margin-left: 15px;
     font-size: 30px;
     left: 20px;
-    position: relative;
+    position: absolute;
     letter-spacing: 2px;
   }
   .header-logo a {
@@ -360,18 +357,20 @@ header {
     font-weight: normal;
     text-transform: uppercase;
   }
-  /* .list-item {
-    float: right;
-    list-style-type: none;
-    padding: 15px;
+  .hamburger-menu-div {
+    display: none;
   }
-  .list-item a {
-    color: #fff;
-    text-decoration: none;
-  } */
-  /* .main-div {
-    position: absolute;
-  } */
+  nav {
+    width: 83%;
+  }
+  nav ul {
+    float: right;
+    display: flex;
+    padding: 0;
+  }
+  .list-item {
+    list-style-type: none;
+  }
   .financer-data-div {
     clear: left;
   }
