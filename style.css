@@ -156,6 +156,54 @@ header {
   margin-top: -5px;
   margin-bottom: -10px;
 }
+.circle {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%/50%;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #d10101;
+  float: left;
+}
+.arrow::before {
+  content: "";
+  position: absolute;
+  margin: 7px 5px;
+  width: 6px;
+  height: 6px;
+  top: -1px;
+  left: -1px;
+  font-weight: 400;
+  border-width: 2px;
+  border-style: solid solid hidden hidden;
+  border-color: #fff;
+  transform: rotate(-45deg);
+}
+/*make arrow transform to 135deg when content is displayed in accordion */
+
+.accordion-list li {
+  background-color: #d10101;
+  width: 100%;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  color: #fff;
+  margin: 5px 0;
+  line-height: 1.4em;
+}
+.accordion-list div {
+  position: relative;
+  top: 5px;
+  margin: 0 8px;
+}
+.accordion-list p {
+  margin: 5px 8px;
+}
 @media (max-width: 768px) {
   .contact-mail {
     display: none;
@@ -296,7 +344,7 @@ header {
     text-transform: capitalize;
     font-size: 40px;
     padding: 0 10px;
-    margin: 0 0 35px;
+    margin-bottom: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   .who-we-are-grid {
@@ -371,52 +419,8 @@ header {
     margin: 0;
     width: 100%;
   }
-  .circle {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%/50%;
-    border-color: #fff;
-    border-width: 2px;
-    border-style: solid;
-    background-color: #d10101;
-    float: left;
-  }
-  .arrow::before {
-    content: "";
-    position: absolute;
-    margin: 7px 5px;
-    width: 6px;
-    height: 6px;
-    top: -1px;
-    left: -1px;
-    font-weight: 400;
-    border-width: 2px;
-    border-style: solid solid hidden hidden;
-    border-color: #fff;
-    transform: rotate(-45deg);
-  }
-  /*make arrow transform to 135deg when content is displayed in accordion */
   .accordion-list {
     padding: 0 2px;
-  }
-  .accordion-list li {
-    background-color: #d10101;
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-    font-size: 18px;
-    padding: 10px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 4px;
-    color: #fff;
-    margin: 5px 0;
-  }
-
-  .accordion-list p {
-    float: right;
-    margin: 0 0 0 25px;
   }
 }
 @media (max-width: 480px) {
@@ -628,7 +632,7 @@ header {
     text-transform: capitalize;
     font-size: 74px;
     padding: 0 10px;
-    margin: 0 0 35px;
+    margin-bottom: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   .what-we-do-section,
@@ -656,5 +660,39 @@ header {
   .who-we-are-image-div {
     position: relative;
     top: 20px;
+  }
+  .what-about-accordion-section {
+    padding: 7.7em 0 0 0;
+  }
+  .what-about-accordion-div {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: auto;
+    align-content: space-between;
+    /* grid-gap: 1.2em; */
+    background-color: #f1f1f1b6;
+  }
+  .accordion-image-div img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .accordion-heading {
+    font-size: 68px;
+    color: #4e4e4e;
+  }
+  .accordion-flex-div {
+    padding: 1.8em 3.3em;
+    position: relative;
+    top: -3em;
+  }
+  .accordion-description {
+    padding: 0 0.8rem;
+    font-size: 19px;
+    line-height: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .accordion-list {
+    padding: 0.8rem;
   }
 }
