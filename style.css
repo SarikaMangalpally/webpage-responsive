@@ -225,7 +225,163 @@ header {
   margin: 0;
   font-weight: 100;
 }
+.responsive-background-main-div {
+  background-image: url("assets/parallax-04.jpg");
+  background-position: center top;
+}
 
+.responsive-background-section p {
+  padding: 0 10px;
+}
+.responsive-background-description {
+  line-height: 1.5em;
+  font-weight: normal;
+  font-size: 19px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.need-help {
+  font-family: "Snell Roundhand", cursive;
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4em;
+}
+.contact-our-team {
+  background-color: #f1a00a;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 165px;
+  margin: 25px 10px;
+  padding: 20px 18px !important;
+  text-transform: capitalize;
+  color: #fff;
+}
+.contact-our-team a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.read-more-arrow {
+  position: relative;
+  border-color: #df0505 !important;
+  top: -1px !important;
+  left: 0 !important;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid solid hidden hidden;
+  transform: rotate(45deg) !important;
+}
+.show-next-client-div,
+.show-our-latest-blogs {
+  position: relative;
+  display: flex;
+  text-align: left;
+  margin-top: 50px;
+}
+.show-next-client-div span,
+.show-our-latest-blogs span {
+  position: relative;
+  width: 40px;
+  height: 1px;
+  background-color: #979797;
+  margin: 2px;
+}
+.show-next-client-div span:hover,
+.show-our-latest-blogs span:hover {
+  background-color: #4e4e4e;
+  cursor: pointer;
+}
+.show-our-latest-blogs {
+  margin-top: 65px;
+}
+.reviews-section {
+  background-color: #f1f1f1b6;
+}
+.reviews-main-div {
+  padding: 5.5em 1.9em;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.clients h3,
+.blog-information-div h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #575757;
+}
+.clients h3 strong {
+  font-weight: 600;
+  color: #333333;
+}
+.star {
+  font-size: 13px !important;
+  color: #ffe600;
+}
+.review-description,
+.blog-description {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  color: #929292;
+}
+.person-name-designation {
+  color: #df0505;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  padding: 15px 0;
+}
+.latest-from-our-blog {
+  padding: 15px 0;
+}
+.blog-logo {
+  max-width: 100%;
+  cursor: pointer;
+}
+.blog-logo:hover {
+  transform: scale(1.1);
+}
+.our-blog-span {
+  color: #333333;
+}
+.blog-main-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+.blog-main-heading:hover {
+  color: #df0505;
+}
+.read-more-text {
+  width: 100px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.read-more-text a {
+  display: block;
+  width: 100px;
+  color: #d10101;
+  text-decoration: none;
+}
+.read-more-text:hover {
+  cursor: pointer;
+}
+.read-more-text:hover .read-more-arrow {
+  animation-name: "move-right";
+  animation-fill-mode: forwards;
+}
+@keyframes move-right {
+  50% {
+    margin-left: 3px;
+  }
+  100% {
+    margin-left: 6px;
+  }
+}
 @media (max-width: 768px) {
   .contact-mail {
     display: none;
@@ -420,7 +576,8 @@ header {
     max-width: 100%;
     max-height: 100%;
   }
-  .what-about-accordion-div {
+  .what-about-accordion-div,
+  .our-team-main-div {
     background-color: #f1f1f1b6;
   }
   .accordion-flex-div {
@@ -444,10 +601,15 @@ header {
   .accordion-list {
     padding: 0 2px;
   }
-  .our-numbers-section {
+  .our-numbers-section,
+  .our-team-section,
+  .responsive-background-section,
+  .review-section {
     padding: 0;
   }
-  .our-numbers-main-div {
+  .our-numbers-main-div,
+  .our-team-main-div,
+  .responsive-background-main-div {
     padding: 5.5em 1.2em;
   }
   .our-numbers-section h2 {
@@ -475,6 +637,46 @@ header {
     font-weight: lighter;
     margin: 5px 0;
   }
+  .our-team-section h2 {
+    padding-left: 15px;
+  }
+
+  .responsive-background-section h2 {
+    color: #fff;
+    padding: 0 0 0 10px;
+    font-size: 38px !important;
+  }
+  .responsive-background-section p {
+    padding: 0 10px;
+  }
+  .responsive-background-description {
+    line-height: 1.5em;
+    font-weight: normal;
+    font-size: 19px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .need-help {
+    font-family: "Snell Roundhand", cursive;
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+    line-height: 1.4em;
+  }
+  .contact-our-team {
+    background-color: #f1a00a;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 165px;
+    margin: 25px 10px 0;
+    padding: 20px 18px !important;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .contact-our-team a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 @media (max-width: 480px) {
   .slide-span {
@@ -485,6 +687,9 @@ header {
     grid-template-columns: 100%;
     grid-auto-rows: auto;
     grid-gap: 10px;
+  }
+  .responsive-background-main-div h2 {
+    font-size: 38px !important;
   }
 }
 @media screen and (max-width: 350px) {
@@ -502,6 +707,23 @@ header {
     float: right;
     margin-left: 28px;
     position: relative;
+  }
+}
+@media screen and (min-width: 481px) {
+  .blog-information-sub-grid {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    justify-content: space-between;
+    grid-gap: 15px;
+  }
+  .subgrid-blog-image-div {
+    margin: 25px auto;
+  }
+  .blog-description {
+    /* padding-right: 15px; */
+  }
+  .read-more-text {
+    padding: 15px 0;
   }
 }
 @media screen and (min-width: 351px) and (max-width: 480px) {
@@ -778,5 +1000,34 @@ header {
     font-weight: lighter;
     font-family: sans-serif;
     color: #fff;
+  }
+  .responsive-background-description {
+    margin: 10px auto;
+  }
+  .responsive-background-section h2 {
+    color: #fff;
+    font-size: 71px;
+    padding: 0 0 0 10px;
+  }
+  .responsive-background-data {
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 5.5em 1.8em;
+  }
+  .reviews-main-div {
+    max-width: 80rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-gap: 25px;
+  }
+  .clients h3,
+  .blog-information-div h3 {
+    font-size: 36px;
+    line-height: 1.3em;
+    margin: 20px 0;
+  }
+  .latest-from-our-blog {
+    padding: 0;
   }
 }
