@@ -931,6 +931,9 @@ footer {
     padding: 0.3em 0 2em;
     margin-left: 34%;
   }
+  .show-next-list-of-team-members {
+    left: 38% !important;
+  }
 }
 @media (max-width: 480px) {
   .slide-span {
@@ -954,6 +957,9 @@ footer {
     padding: 0.3em 0 2em;
     margin-left: 28%;
   }
+  .show-next-list-of-team-members {
+    left: 28% !important;
+  }
 }
 @media screen and (max-width: 350px) {
   .slide-span {
@@ -966,6 +972,9 @@ footer {
   .social-media-div {
     padding: 0.7em 0 2em;
     margin-left: 18%;
+  }
+  .show-next-list-of-team-members {
+    left: 20% !important;
   }
 }
 @media screen and (max-width: 600px) {
