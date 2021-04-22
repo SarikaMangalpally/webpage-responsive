@@ -503,10 +503,6 @@ footer {
 .designed-by {
   margin: 10px 0;
 }
-
-.our-team-main-div {
-  white-space: nowrap;
-}
 .our-team-main-div h2 {
   color: #333;
 }
@@ -575,16 +571,14 @@ footer {
   height: 1px;
   background-color: #979797;
 }
-.team-members-main-div {
-  margin-top: 2rem;
-}
+
 .team-members-list {
   position: relative;
   display: flex;
-  white-space: nowrap;
   overflow: scroll;
   width: auto;
   padding-left: 15px;
+  top: -6rem;
 }
 .team-member {
   margin-right: 15px;
@@ -593,7 +587,28 @@ footer {
   /* position: absolute; */
   display: block;
 }
-
+.about-team-member {
+  top: 45%;
+  position: sticky;
+  padding: 10px 15px;
+  margin: 0 15px;
+  line-height: 1.6em;
+  background-color: #c80000;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial;
+  opacity: 0;
+  bottom: 2px;
+  transition: all 0.5s;
+}
+.about-team-member:hover {
+  opacity: 1;
+  top: 40%;
+  /* bottom: 2em; */
+}
+.about-team-member p:hover {
+  transition: all 0.5s linear;
+}
 @media (max-width: 768px) {
   .show-next-list-of-team-members {
     left: 35%;
@@ -1219,7 +1234,7 @@ footer {
     grid-template-columns: repeat(2, 50%);
     grid-auto-rows: auto;
     align-content: space-between;
-    /* grid-gap: 1.2em; */
+    grid-gap: 1.2em;
     background-color: #f1f1f1b6;
   }
   .accordion-image-div img {
@@ -1230,9 +1245,10 @@ footer {
   .accordion-heading {
     font-size: 68px;
     color: #4e4e4e;
+    /* overflow: hidden; */
   }
   .accordion-flex-div {
-    padding: 1.8em 3.3em;
+    padding: 1.8em;
     position: relative;
     top: -3em;
   }
