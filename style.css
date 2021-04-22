@@ -550,16 +550,16 @@ footer {
 .show-next-list-of-team-members {
   display: flex;
   margin-top: 5rem;
-  width: 10rem;
+  width: 8.5rem;
   position: relative;
 }
 .show-next-list-of-team-members span {
   position: relative;
-  width: 35px;
+  width: 40px;
   height: 1px;
   cursor: pointer;
-  background-color: #979797;
-  margin: auto;
+  background-color: #b3b3b3e1;
+  margin: auto 2px;
 }
 .show-next-list-of-team-members span:hover {
   background-color: #575757;
