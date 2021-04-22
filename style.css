@@ -502,7 +502,100 @@ footer {
 .designed-by {
   margin: 10px 0;
 }
+.our-team-main-div {
+  white-space: nowrap;
+}
+.team-member-details {
+  text-align: center;
+  /* padding: 10px 15px; */
+  line-height: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.team-member-details p {
+  margin: 0;
+  line-height: 1.6em;
+}
+.team-member-name {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #414141;
+}
+.team-member-role {
+  color: #c80000;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.team-member-social-media {
+  margin-top: 15px;
+}
+.team-member-social-media span {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #d6d6d6be;
+  border-radius: 25px;
+}
+.team-member-social-media i {
+  margin: 5px;
+}
+.team-member-social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+.team-member-social-media span:hover {
+  background-color: #c80000;
+}
+.show-next-list-of-team-members {
+  display: flex;
+  margin-top: 5rem;
+  width: 10rem;
+  position: relative;
+}
+.show-next-list-of-team-members span {
+  position: relative;
+  width: 35px;
+  height: 1px;
+  cursor: pointer;
+  background-color: #979797;
+  margin: auto;
+}
+.show-next-list-of-team-members span:hover {
+  background-color: #575757;
+}
+.show-next-list-of-team-members a {
+  text-decoration: none;
+  width: 35px;
+  height: 1px;
+  background-color: #979797;
+}
+
+.team-members-main-div {
+  margin-top: 2rem;
+}
+.team-members-list {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  overflow: scroll;
+  width: auto;
+}
+.team-member {
+  margin-right: 15px;
+}
+.team-member-image-div {
+  /* position: absolute; */
+  display: block;
+}
+
 @media (max-width: 768px) {
+  .show-next-list-of-team-members {
+    left: 35%;
+  }
+  .team-member-image-div img {
+    max-width: 200px;
+  }
   .contact-mail {
     display: none;
   }
@@ -1150,7 +1243,7 @@ footer {
   }
   .our-numbers-main-div {
     max-width: 80rem;
-    padding: 15px;
+    padding: 10px;
     margin: auto;
     padding: 2em 0;
   }
@@ -1189,7 +1282,7 @@ footer {
   .responsive-background-data {
     margin: 0 auto;
     max-width: 80rem;
-    padding: 5.5em 1.8em;
+    padding: 5.5em 1.5em;
   }
   .reviews-main-div {
     max-width: 80rem;
@@ -1241,10 +1334,24 @@ footer {
     padding: 0.3em 0 2em;
     margin-left: 40%;
   }
+  .our-team-main-div h2 {
+    padding: 0 0 0 0.5em;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  .our-team-main-div {
+    padding: 7em 0;
+  }
 }
 @media screen and (max-width: 1140px) {
   .details-sub-div img {
     display: none;
+  }
+  .team-member-image-div img {
+    max-width: 220px;
+  }
+  .show-next-list-of-team-members {
+    left: 40%;
   }
 }
 @media screen and (min-width: 1141px) {
@@ -1259,5 +1366,11 @@ footer {
     display: block;
     max-width: 80%;
     margin: auto;
+  }
+  .team-member-image-div img {
+    max-width: 100%;
+  }
+  .show-next-list-of-team-members {
+    left: 45%;
   }
 }
