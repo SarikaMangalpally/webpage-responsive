@@ -300,7 +300,8 @@ header {
 .show-our-latest-blogs {
   margin-top: 65px;
 }
-.reviews-section {
+.reviews-section,
+.our-team-section {
   background-color: #f1f1f1b6;
 }
 .reviews-main-div {
@@ -502,7 +503,119 @@ footer {
 .designed-by {
   margin: 10px 0;
 }
+.our-team-main-div h2 {
+  color: #333;
+}
+.team-member-details {
+  text-align: center;
+  /* padding: 10px 15px; */
+  line-height: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.team-member-details p {
+  margin: 0;
+  line-height: 1.6em;
+}
+.team-member-name {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #414141;
+}
+.team-member-role {
+  color: #c80000;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.team-member-social-media {
+  margin-top: 15px;
+}
+.team-member-social-media span {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #d6d6d6be;
+  border-radius: 25px;
+}
+.team-member-social-media i {
+  margin: 5px;
+}
+.team-member-social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+.team-member-social-media span:hover {
+  background-color: #c80000;
+}
+.show-next-list-of-team-members {
+  display: flex;
+  margin-top: 5rem;
+  width: 8.5rem;
+  position: relative;
+}
+.show-next-list-of-team-members span {
+  position: relative;
+  width: 40px;
+  height: 1px;
+  cursor: pointer;
+  background-color: #b3b3b3e1;
+  margin: auto 2px;
+}
+.show-next-list-of-team-members span:hover {
+  background-color: #575757;
+}
+.show-next-list-of-team-members a {
+  text-decoration: none;
+  width: 35px;
+  height: 1px;
+  background-color: #979797;
+}
+
+.team-members-list {
+  position: relative;
+  display: flex;
+  overflow: scroll;
+  width: auto;
+  padding-left: 15px;
+  top: -6rem;
+}
+.team-member {
+  margin-right: 15px;
+}
+.team-member-image-div {
+  /* position: absolute; */
+  display: block;
+}
+.about-team-member {
+  top: 45%;
+  position: sticky;
+  padding: 10px 15px;
+  margin: 0 15px;
+  line-height: 1.6em;
+  background-color: #c80000;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial;
+  opacity: 0;
+  bottom: 2px;
+  transition: all 0.5s;
+}
+.about-team-member:hover {
+  opacity: 1;
+  top: 40%;
+  /* bottom: 2em; */
+}
+.about-team-member p:hover {
+  transition: all 0.5s linear;
+}
 @media (max-width: 768px) {
+  .show-next-list-of-team-members {
+    left: 35%;
+  }
+  .team-member-image-div img {
+    max-width: 200px;
+  }
   .contact-mail {
     display: none;
   }
@@ -1121,7 +1234,7 @@ footer {
     grid-template-columns: repeat(2, 50%);
     grid-auto-rows: auto;
     align-content: space-between;
-    /* grid-gap: 1.2em; */
+    grid-gap: 1.2em;
     background-color: #f1f1f1b6;
   }
   .accordion-image-div img {
@@ -1132,9 +1245,10 @@ footer {
   .accordion-heading {
     font-size: 68px;
     color: #4e4e4e;
+    /* overflow: hidden; */
   }
   .accordion-flex-div {
-    padding: 1.8em 3.3em;
+    padding: 1.8em;
     position: relative;
     top: -3em;
   }
@@ -1150,7 +1264,7 @@ footer {
   }
   .our-numbers-main-div {
     max-width: 80rem;
-    padding: 15px;
+    padding: 10px;
     margin: auto;
     padding: 2em 0;
   }
@@ -1189,7 +1303,7 @@ footer {
   .responsive-background-data {
     margin: 0 auto;
     max-width: 80rem;
-    padding: 5.5em 1.8em;
+    padding: 5.5em 1.5em;
   }
   .reviews-main-div {
     max-width: 80rem;
@@ -1241,10 +1355,24 @@ footer {
     padding: 0.3em 0 2em;
     margin-left: 40%;
   }
+  .our-team-main-div h2 {
+    padding: 0 0 0 0.5em;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  .our-team-main-div {
+    padding: 7em 0;
+  }
 }
 @media screen and (max-width: 1140px) {
   .details-sub-div img {
     display: none;
+  }
+  .team-member-image-div img {
+    max-width: 220px;
+  }
+  .show-next-list-of-team-members {
+    left: 40%;
   }
 }
 @media screen and (min-width: 1141px) {
@@ -1259,5 +1387,11 @@ footer {
     display: block;
     max-width: 80%;
     margin: auto;
+  }
+  .team-member-image-div img {
+    max-width: 100%;
+  }
+  .show-next-list-of-team-members {
+    left: 45%;
   }
 }
