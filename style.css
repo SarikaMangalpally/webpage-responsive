@@ -300,7 +300,8 @@ header {
 .show-our-latest-blogs {
   margin-top: 65px;
 }
-.reviews-section {
+.reviews-section,
+.our-team-section {
   background-color: #f1f1f1b6;
 }
 .reviews-main-div {
@@ -502,6 +503,7 @@ footer {
 .designed-by {
   margin: 10px 0;
 }
+
 .our-team-main-div {
   white-space: nowrap;
 }
@@ -582,6 +584,7 @@ footer {
   white-space: nowrap;
   overflow: scroll;
   width: auto;
+  padding-left: 15px;
 }
 .team-member {
   margin-right: 15px;
