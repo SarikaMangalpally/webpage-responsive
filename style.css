@@ -505,6 +505,9 @@ footer {
 .our-team-main-div {
   white-space: nowrap;
 }
+.our-team-main-div h2 {
+  color: #333;
+}
 .team-member-details {
   text-align: center;
   /* padding: 10px 15px; */
@@ -570,7 +573,6 @@ footer {
   height: 1px;
   background-color: #979797;
 }
-
 .team-members-main-div {
   margin-top: 2rem;
 }
