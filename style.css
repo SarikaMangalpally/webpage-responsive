@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+.premium-feature-tag {
+  position: fixed;
+  right: 0;
+  top: 15%;
+}
 header {
   display: block;
 }
