@@ -550,7 +550,6 @@ footer {
 }
 .show-next-list-of-team-members {
   display: flex;
-  margin-top: 5rem;
   width: 8.5rem;
   position: relative;
 }
@@ -571,7 +570,6 @@ footer {
   height: 1px;
   background-color: #979797;
 }
-
 .team-members-list {
   position: relative;
   display: flex;
@@ -608,6 +606,91 @@ footer {
 }
 .about-team-member p:hover {
   transition: all 0.5s linear;
+}
+.our-projects-section {
+  margin: 5.5em 0;
+}
+.our-projects-section-main-div h2 {
+  font-size: 38px !important;
+  padding-left: 25px !important;
+}
+.projects-worked-on-div {
+  position: relative;
+}
+.projects-list {
+  position: relative;
+  display: flex;
+  overflow: scroll;
+}
+.project-div {
+  margin-right: 15px;
+  position: relative;
+}
+
+.project-overview {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.project-image-div {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  display: block;
+}
+
+.project-info-image-text img {
+  position: relative;
+  object-fit: cover;
+
+  min-height: 400px;
+  max-width: 600px;
+  min-width: 180px;
+  z-index: -1;
+}
+.project-number {
+  font-size: 36px;
+  margin: 0 auto 20px;
+}
+.project-title {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-family: arial;
+  margin: 0 5px 20px;
+}
+.project-description {
+  font-size: 15px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+}
+.projects-slider-div {
+  position: absolute;
+  width: 85px;
+  height: 45px;
+  background-color: #333;
+  bottom: 5px;
+}
+.projects-arrow {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-width: 2px;
+  border-style: solid solid hidden hidden;
+  border-color: #fff;
+}
+.rotate-left {
+  margin: 15px 20px;
+  transform: rotate(-135deg);
+  padding: 8px;
+}
+.rotate-right {
+  transform: rotate(45deg);
+  padding: 8px;
+  margin: 15px 48px;
 }
 @media (max-width: 768px) {
   .show-next-list-of-team-members {
@@ -931,6 +1014,12 @@ footer {
     padding: 0.3em 0 2em;
     margin-left: 34%;
   }
+  .show-next-list-of-team-members {
+    left: 38% !important;
+  }
+  .projects-slider-div {
+    margin-left: 40% !important;
+  }
 }
 @media (max-width: 480px) {
   .slide-span {
@@ -954,6 +1043,23 @@ footer {
     padding: 0.3em 0 2em;
     margin-left: 28%;
   }
+  .show-next-list-of-team-members {
+    left: 28% !important;
+  }
+
+  .project-number {
+    font-size: 30px;
+  }
+  .project-title {
+    font-size: 30px;
+  }
+  .project-info-image-text img {
+    /* min-width: 360px; */
+    max-width: 440px;
+  }
+  .projects-slider-div {
+    margin-left: 38% !important;
+  }
 }
 @media screen and (max-width: 350px) {
   .slide-span {
@@ -966,6 +1072,21 @@ footer {
   .social-media-div {
     padding: 0.7em 0 2em;
     margin-left: 18%;
+  }
+  .show-next-list-of-team-members {
+    left: 20% !important;
+  }
+
+  .project-info-image-text img {
+    max-width: 320px;
+  }
+  .projects-slider-div {
+    margin-left: 35% !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .project-info-image-text img {
+    width: 280px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1374,6 +1495,9 @@ footer {
   .show-next-list-of-team-members {
     left: 40%;
   }
+  .projects-slider-div {
+    margin-left: 42%;
+  }
 }
 @media screen and (min-width: 1141px) {
   .details-sub-div {
@@ -1393,5 +1517,8 @@ footer {
   }
   .show-next-list-of-team-members {
     left: 45%;
+  }
+  .projects-slider-div {
+    margin-left: 45%;
   }
 }
